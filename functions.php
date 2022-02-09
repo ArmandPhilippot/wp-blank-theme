@@ -52,3 +52,34 @@ if ( ! function_exists( 'wpbt_setup' ) ) {
 	}
 }
 add_action( 'after_setup_theme', 'wpbt_setup' );
+
+/**
+ * Redirect to a new URL.
+ *
+ * @since 1.0.0
+ *
+ * @param string  $url The new URL.
+ * @param integer $status_code The status code.
+ * @return void
+ */
+function wpbt_redirect( $url, $status_code = 303 ) {
+	header( 'Location: ' . $url, true, $status_code );
+	die();
+}
+
+/**
+ * Load environment variables.
+ *
+ * @since 1.0.0
+ *
+ * @return void
+ */
+function wpbt_load_dotenv() {
+	if ( ! file_exists( get_template_directory() . '/vendor/autoload.php' ) ) {
+		return;
+	}
+
+	require_once get_template_directory() . '/vendor/autoload.php';
+	$wpbt_dotenv = \Dotenv\Dotenv::createImmutable( __DIR__ );
+	$wpbt_dotenv->safeLoad();
+}

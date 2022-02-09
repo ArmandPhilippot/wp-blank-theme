@@ -11,3 +11,9 @@
  * @package WP-Blank-Theme
  * @since   1.0.0
  */
+
+wpbt_load_dotenv();
+
+if ( $_ENV['REDIRECTION_URL'] ) {
+	wpbt_redirect( $_ENV['REDIRECTION_URL'] );
+}
