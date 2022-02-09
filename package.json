@@ -1,0 +1,37 @@
+{
+	"name": "wp-blank-theme",
+	"version": "1.0.0",
+	"description": "A blank theme to use WordPress as headless CMS.",
+	"license": "GPL-2.0-or-later",
+	"author": {
+		"name": "Armand Philippot",
+		"email": "contact@armandphilippot.com",
+		"url": "https://www.armandphilippot.com"
+	},
+	"homepage": "https://github.com/ArmandPhilippot/wp-blank-theme#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ArmandPhilippot/wp-blank-theme.git"
+	},
+	"bugs": {
+		"url": "https://github.com/ArmandPhilippot/wp-blank-theme/issues"
+	},
+	"keywords": [
+		"WordPress",
+		"theme"
+	],
+	"private": true,
+	"scripts": {
+		"release": "standard-version -a -s"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^16.1.0",
+		"@commitlint/config-conventional": "^16.0.0",
+		"@wordpress/prettier-config": "^1.1.1",
+		"husky": "^7.0.4",
+		"npm-run-all": "^4.1.5",
+		"prettier": "npm:wp-prettier@^2.2.1-beta-1",
+		"replace-in-file": "^6.3.2",
+		"standard-version": "^9.3.2"
+	}
+}

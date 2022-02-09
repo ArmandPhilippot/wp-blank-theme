@@ -1,0 +1,42 @@
+{
+	"name": "armandphilippot/wp-blank-theme",
+	"description": "A blank theme to use WordPress as headless CMS.",
+	"license": "GPL2.0-or-later",
+	"authors": [
+		{
+			"name": "Armand Philippot",
+			"email": "contact@armandphilippot.com",
+			"homepage": "https://www.armandphilippot.com/"
+		}
+	],
+	"homepage": "https://github.com/ArmandPhilippot/wp-blank-theme#readme",
+	"support": {
+		"issues": "https://github.com/ArmandPhilippot/wp-blank-theme/issues",
+		"source": "https://github.com/ArmandPhilippot/wp-blank-theme"
+	},
+	"keywords": [
+		"WordPress",
+		"theme"
+	],
+	"type": "wordpress-theme",
+	"scripts": {
+		"lint": "phpcs --standard=phpcs.xml",
+		"fix": "phpcbf --standard=phpcs.xml"
+	},
+	"require": {
+		"composer/installers": "^1.0 || ^2.0",
+		"vlucas/phpdotenv": "^5.4"
+	},
+	"require-dev": {
+		"wp-coding-standards/wpcs": "^2.3",
+		"squizlabs/php_codesniffer": "^3.6",
+		"phpcompatibility/phpcompatibility-wp": "^2.1",
+		"dealerdirect/phpcodesniffer-composer-installer": "^0.7.1"
+	},
+	"config": {
+		"allow-plugins": {
+			"composer/installers": true,
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
+	}
+}
