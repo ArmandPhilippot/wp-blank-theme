@@ -22,6 +22,9 @@
 	],
 	"private": true,
 	"scripts": {
+		"bump": "npm-run-all --parallel bump:*",
+		"bump:css": "replace-in-file --configFile=tools/bump-style-css.js",
+		"bump:php": "replace-in-file --configFile=tools/bump-functions-php.js",
 		"release": "standard-version -a -s"
 	},
 	"devDependencies": {
@@ -33,5 +36,10 @@
 		"prettier": "npm:wp-prettier@^2.2.1-beta-1",
 		"replace-in-file": "^6.3.2",
 		"standard-version": "^9.3.2"
+	},
+	"standard-version": {
+		"scripts": {
+			"postbump": "npm run bump && git add -A"
+		}
 	}
 }
