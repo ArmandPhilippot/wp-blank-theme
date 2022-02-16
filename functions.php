@@ -17,7 +17,7 @@
 /**
  * Currently theme version.
  */
-define( 'WPBT_VERSION', '1.0.0' );
+define( 'WPBT_VERSION', '1.0.1' );
 
 if ( ! function_exists( 'wpbt_setup' ) ) {
 	/**

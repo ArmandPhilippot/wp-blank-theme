@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.1](https://github.com/ArmandPhilippot/wp-blank-theme/compare/v1.0.0...v1.0.1) (2022-02-16)
+
+
+### Bug Fixes
+
+* check if env is set before calling redirect function ([9dd0e55](https://github.com/ArmandPhilippot/wp-blank-theme/commit/9dd0e552a5b35fda912cc73fa4f7d4a307150ed8))
+
 ## 1.0.0 (2022-02-09)
 
 
