@@ -15,5 +15,5 @@
 wpbt_load_dotenv();
 
 if ( isset( $_ENV['REDIRECTION_URL'] ) ) {
-	wpbt_redirect( $_ENV['REDIRECTION_URL'] );
+	wpbt_redirect( sanitize_url( $_ENV['REDIRECTION_URL'] ) );
 }
