@@ -28,10 +28,10 @@
 		"vlucas/phpdotenv": "^5.4"
 	},
 	"require-dev": {
-		"wp-coding-standards/wpcs": "^2.3",
+		"wp-coding-standards/wpcs": "^3.0.0",
 		"squizlabs/php_codesniffer": "^3.6",
 		"phpcompatibility/phpcompatibility-wp": "^2.1",
-		"dealerdirect/phpcodesniffer-composer-installer": "^0.7.1"
+		"dealerdirect/phpcodesniffer-composer-installer": "^1.0.0"
 	},
 	"config": {
 		"allow-plugins": {
