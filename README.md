@@ -1,10 +1,10 @@
 # WP Blank Theme
 
-A blank theme to use WordPress as headless CMS.
+A blank theme to use WordPress as a headless CMS.
 
 ## Feature
 
-If the `REDIRECTION_URL` is specified, the user will be redirect to the given URL when he tries to access another URL than `/wp-admin/`.
+If the `REDIRECTION_URL` is specified, the user will be redirected to the given URL when they try to access another URL than `/wp-admin/`.
 
 ## Setup
 
@@ -12,7 +12,7 @@ If the `REDIRECTION_URL` is specified, the user will be redirect to the given UR
 
 2. Install [Composer](https://getcomposer.org/) and run `composer install` in the theme's root folder to install dependencies.
 
-3. Then, in your theme, create a `.env` file :
+3. Then, in your theme folder, create a `.env` file :
 
 ```bash
 cp .env.example .env
@@ -20,7 +20,7 @@ cp .env.example .env
 
 4. Replace the `REDIRECTION_URL` value with your frontend URL.
 
-5. Finally activate the theme in the WordPress administration.
+5. Finally, activate the theme in the WordPress admin dashboard.
 
 ## Additional notes
 
